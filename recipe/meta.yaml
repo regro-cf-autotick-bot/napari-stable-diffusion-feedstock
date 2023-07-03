@@ -1,5 +1,5 @@
 {% set name = "napari-stable-diffusion" %}
-{% set version = "0.0.1" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-stable-diffusion-{{ version }}.tar.gz
-  sha256: f089c6253afc95a786318cf8cbedb5f78e738cc09162efe1df91bc811396af3e
+  sha256: d2070c624e43aad3185db1e3998a217df29b372be513c42a188d561def7468a6
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - numpy
     - python >=3.8,<3.11
     - pytorch
-    - qtpy    
+    - qtpy
     - transformers
 
 test:
